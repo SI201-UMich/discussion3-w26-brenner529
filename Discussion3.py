@@ -2,29 +2,30 @@ import math
 
 class Rectangle():
    def __init__(self, width, height):
-       self.width = width
-       self.height = height
+        self.width = width
+        self.height = height
     
 
 
     # Create the "__str__" method
 
    def __str__(self):
-       return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
+        return "A rectangle with width " + str(self.width) + " and height " + str(self.height)
 
 
 
     # Create the "area_calculator" method
 
    def area_calculator(self):
-       area = self.height * self.width
-       return float(area)
+        area = self.height * self.width
+        return float(area)
    
 
 
-   def __eq__(self):
-       if
-    # 
+   def __eq__(self, other):
+       return self.width == other.width and self.height == other.height
+       
+    
     # Returns a boolean value
 
     # YOUR CODE HERE
